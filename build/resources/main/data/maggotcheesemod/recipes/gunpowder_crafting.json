@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	
+	"pattern":
+	[
+		"A",
+		"C"
+	],
+	
+	"key":
+	{
+		"A": { "item": "maggotcheesemod:ashes" },
+		"C": { "item": "minecraft:charcoal" }
+	},
+	
+	"result": { "item": "minecraft:gunpowder" }
+}

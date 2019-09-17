@@ -1,0 +1,27 @@
+modLoader="javafml" #mandatory
+loaderVersion="[26,)" #mandatory (26 is current forge version)
+issueTrackerURL="http://my.issue.tracker/" #optional
+[[mods]] #mandatory
+modId="maggotcheesemod" #mandatory
+version="1" #mandatory
+displayName="Maggot Cheese Mod" #mandatory
+updateJSONURL="https://sites.google.com/view/maggotcheesemod/home" #optional
+displayURL="https://sites.google.com/view/maggotcheesemod/home" #optional
+logoFile="examplemod.png" #optional
+credits="A mod by LandoSpuk and ThatOneBeaner124" #optional
+authors="Landospuk" #optional
+description='''
+The Official Maggot Cheese Mod!
+'''
+[[dependencies.MaggotCheeseMod]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[28,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.MaggotCheeseMod]]
+    modId="Minecraft"
+    mandatory=true
+    versionRange="[1.14.4]"
+    ordering="NONE"
+    side="BOTH"

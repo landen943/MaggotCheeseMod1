@@ -1,0 +1,7 @@
+{
+	"type": "minecraft:smelting",
+	"ingredient": { "item": "maggotcheesemod:burnt_maggot_cheese" },
+	"result": "maggotcheesemod:ashes",
+	"experience": 2,
+	"cookingtime": 200
+}

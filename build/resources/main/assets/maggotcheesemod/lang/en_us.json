@@ -1,0 +1,10 @@
+{
+	"item.maggotcheesemod.maggot_cheese": "Maggot Cheese",
+	"item.maggotcheesemod.crispy_maggot_cheese": "Crispy Maggot Cheese",
+	"item.maggotcheesemod.burnt_maggot_cheese": "Burnt Maggot Cheese",
+	"item.maggotcheesemod.ashes": "Ashes",
+
+	"itemGroup.maggotcheeseitemgroup": "Maggot Cheese Mod",
+
+	"block.maggotcheesemod.maggot_cheese_ore": "Maggot Cheese Ore"
+}

@@ -1,0 +1,8 @@
+
+[oregen]
+	#Decide if you want maggot ores to spawn in the overworld
+	generate_overworld = true
+	#Maximum number of ore veins of the maggot ore that can spawn in one chunk.
+	#Range: 5 ~ 20
+	maggot_ore_chance = 9
+
