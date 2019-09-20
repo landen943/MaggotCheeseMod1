@@ -1,11 +1,11 @@
 package landospuk.maggotcheesemod;
 
-import landospuk.maggotcheesemod.lists.FoodList;
+import landospuk.maggotcheesemod.init.FoodList;
 
 import org.apache.logging.log4j.LogManager;
 
 import landospuk.maggotcheesemod.config.Config;
-import landospuk.maggotcheesemod.lists.BlockList;
+import landospuk.maggotcheesemod.init.BlockList;
 import landospuk.maggotcheesemod.world.OreGeneration;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
@@ -21,7 +21,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLPaths;
-import landospuk.maggotcheesemod.lists.ItemList;
+import landospuk.maggotcheesemod.init.ItemList;
 
 @Mod("maggotcheesemod")
 public class maggotcheesemod
@@ -29,8 +29,9 @@ public class maggotcheesemod
 	public static maggotcheesemod instance;
 	public static final String modid = "maggotcheesemod";
 	public static final org.apache.logging.log4j.Logger Logger = LogManager.getLogger(modid);
-	public static final MaggotCheeseItemGroup breffItemGroup = new MaggotCheeseItemGroup();
+	public static final MaggotCheeseItemGroup MaggotCheeseItemGroup = new MaggotCheeseItemGroup();
 	public static final String LOGGER = null;
+	public static final String MOD_ID = "maggotcheesemod";
 	
 	private void setup1(final FMLCommonSetupEvent event)
 	{
@@ -68,17 +69,18 @@ public maggotcheesemod()
 		public static void registerItems1(final RegistryEvent.Register<Item> event)
 		{
 			event.getRegistry().registerAll
-			(
-					ItemList.maggot_cheese_ore = new BlockItem(BlockList.maggot_cheese_ore, new Item.Properties().group(breffItemGroup)).setRegistryName(BlockList.maggot_cheese_ore.getRegistryName()),
+			 (
+					ItemList.maggot_cheese_ore = new BlockItem(BlockList.maggot_cheese_ore, new Item.Properties().group(MaggotCheeseItemGroup)).setRegistryName(BlockList.maggot_cheese_ore.getRegistryName()),
+					ItemList.maggot_cheese_plant = new BlockItem(BlockList.maggot_cheese_plant, new Item.Properties().group(MaggotCheeseItemGroup)).setRegistryName(BlockList.maggot_cheese_plant.getRegistryName()),
 					
-					ItemList.maggot_cheese =  new Item(new Item.Properties().food(FoodList.maggotcheeseFood).group(breffItemGroup)).setRegistryName(location("maggot_cheese")),
-					ItemList.crispy_maggot_cheese =  new Item(new Item.Properties().food(FoodList.crispymaggotcheeseFood).group(breffItemGroup)).setRegistryName(location("crispy_maggot_cheese")),
-					ItemList.burnt_maggot_cheese =  new Item(new Item.Properties().food(FoodList.burntmaggotcheeseFood).group(breffItemGroup)).setRegistryName(location("burnt_maggot_cheese")),
-					ItemList.ashes =  new Item(new Item.Properties().group(breffItemGroup)).setRegistryName(location("ashes"))
-			);
-			Logger.info("Blocks registered.");
+					ItemList.maggot_cheese = new Item(new Item.Properties().food(FoodList.maggotcheeseFood).group(MaggotCheeseItemGroup)).setRegistryName(location("crispy_maggot_cheese")),
+					ItemList.crispy_maggot_cheese =  new Item(new Item.Properties().food(FoodList.crispymaggotcheeseFood).group(MaggotCheeseItemGroup)).setRegistryName(location("crispy_maggot_cheese")),
+					ItemList.burnt_maggot_cheese =  new Item(new Item.Properties().food(FoodList.burntmaggotcheeseFood).group(MaggotCheeseItemGroup)).setRegistryName(location("burnt_maggot_cheese")),
+					ItemList.ashes =  new Item(new Item.Properties().group(MaggotCheeseItemGroup)).setRegistryName(location("ashes"))
+			 );
+			 Logger.info("Blocks registered.");
 		}
-		
+
 		private static ResourceLocation location(String name)
 		{
 			return new ResourceLocation(modid, name);

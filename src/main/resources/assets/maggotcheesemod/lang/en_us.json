@@ -6,5 +6,8 @@
 
 	"itemGroup.maggotcheeseitemgroup": "Maggot Cheese Mod",
 
-	"block.maggotcheesemod.maggot_cheese_ore": "Maggot Cheese Ore"
+	"block.maggotcheesemod.maggot_cheese_ore": "Maggot Cheese Ore",
+	
+	"block.maggotcheesemod.maggot_cheese_plant": "Maggot Cheese Plant",
+	"item.maggotcheesemod.maggot_seeds": "Maggot Seeds"
 }

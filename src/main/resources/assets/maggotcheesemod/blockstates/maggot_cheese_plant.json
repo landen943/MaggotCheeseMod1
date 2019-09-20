@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "age=0": { "model": "maggotcheesemod:block/maggot_cheese_plant_stage0" },
+        "age=1": { "model": "maggotcheesemod:block/maggot_cheese_plant_stage1" },
+        "age=2": { "model": "maggotcheesemod:block/maggot_cheese_plant_stage2" },
+        "age=3": { "model": "maggotcheesemod:block/maggot_cheese_plant_stage3" },
+        "age=4": { "model": "maggotcheesemod:block/maggot_cheese_plant_stage4" },
+        "age=5": { "model": "maggotcheesemod:block/maggot_cheese_plant_stage5" },
+        "age=6": { "model": "maggotcheesemod:block/maggot_cheese_plant_stage6" },
+        "age=7": { "model": "maggotcheesemod:block/maggot_cheese_plant_stage7" }
+    }
+}

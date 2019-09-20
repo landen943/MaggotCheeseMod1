@@ -2,7 +2,7 @@ package landospuk.maggotcheesemod.world;
 
 import landospuk.maggotcheesemod.config.OregenConfig;
 
-import landospuk.maggotcheesemod.lists.BlockList;
+import landospuk.maggotcheesemod.init.BlockList;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStage.Decoration;
 import net.minecraft.world.gen.feature.Feature;
