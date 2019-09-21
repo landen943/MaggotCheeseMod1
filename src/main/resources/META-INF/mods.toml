@@ -3,7 +3,7 @@ loaderVersion="[26,)" #mandatory (26 is current forge version)
 issueTrackerURL="http://my.issue.tracker/" #optional
 [[mods]] #mandatory
 modId="maggotcheesemod" #mandatory
-version="1" #mandatory
+version="2" #mandatory
 displayName="Maggot Cheese Mod" #mandatory
 updateJSONURL="https://sites.google.com/view/maggotcheesemod/home" #optional
 displayURL="https://sites.google.com/view/maggotcheesemod/home" #optional

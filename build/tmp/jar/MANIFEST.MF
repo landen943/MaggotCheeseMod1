@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: MaggotCheeseMod3
-Implementation-Version: 1.0
+Implementation-Version: 2.0
 Specification-Vendor: landospuk
 Specification-Title: maggotcheesemod
-Implementation-Timestamp: 2019-09-17T17:40:53-0500
+Implementation-Timestamp: 2019-09-21T02:58:25-0500
 Specification-Version: 1
 Implementation-Vendor: landospuk
 

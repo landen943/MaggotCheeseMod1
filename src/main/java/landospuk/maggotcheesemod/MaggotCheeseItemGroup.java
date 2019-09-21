@@ -5,14 +5,12 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 
 public class MaggotCheeseItemGroup extends ItemGroup
-{
-
-	public MaggotCheeseItemGroup() 
+{	
+	public MaggotCheeseItemGroup()
 	{
-		super("maggotcheeseitemgroup");
+		super("maggotcheesemod");
 	}
-
-	@Override
+	
 	public ItemStack createIcon() 
 	{
 		return new ItemStack(ItemList.maggot_cheese);

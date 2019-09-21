@@ -4,10 +4,9 @@
 	"item.maggotcheesemod.burnt_maggot_cheese": "Burnt Maggot Cheese",
 	"item.maggotcheesemod.ashes": "Ashes",
 
-	"itemGroup.maggotcheeseitemgroup": "Maggot Cheese Mod",
+	"itemGroup.maggotcheesemod": "Maggot Cheese Mod",
 
 	"block.maggotcheesemod.maggot_cheese_ore": "Maggot Cheese Ore",
-	
-	"block.maggotcheesemod.maggot_cheese_plant": "Maggot Cheese Plant",
+
 	"item.maggotcheesemod.maggot_seeds": "Maggot Seeds"
 }
