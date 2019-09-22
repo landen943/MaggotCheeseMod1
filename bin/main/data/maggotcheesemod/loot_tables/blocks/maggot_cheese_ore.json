@@ -8,8 +8,7 @@
 			[
 				{
 					"type": "minecraft:item",
-					"name": "breffmod:maggot_cheese",
-					"count": 3
+					"name": "maggotcheesemod:maggot_cheese"
 				}
 			]
 		}
