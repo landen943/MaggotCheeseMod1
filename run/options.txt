@@ -19,13 +19,13 @@ bobView:true
 mouseSensitivity:0.5
 fov:1.0
 gamma:0.0
-renderDistance:12
+renderDistance:10
 guiScale:3
 particles:0
-maxFps:120
+maxFps:100
 difficulty:2
-fancyGraphics:true
-ao:2
+fancyGraphics:false
+ao:1
 biomeBlendRadius:2
 renderClouds:true
 resourcePacks:[]
@@ -88,7 +88,7 @@ key_key.hotbar.6:key.keyboard.6
 key_key.hotbar.7:key.keyboard.7
 key_key.hotbar.8:key.keyboard.8
 key_key.hotbar.9:key.keyboard.9
-soundCategory_master:1.0
+soundCategory_master:0.14900662
 soundCategory_music:0.0
 soundCategory_record:1.0
 soundCategory_weather:1.0

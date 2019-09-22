@@ -2,6 +2,7 @@ package landospuk.maggotcheesemod;
 
 import org.apache.logging.log4j.LogManager;
 
+import landospuk.maggotcheesemod.client.renders.MaggotRenderRegistry;
 import landospuk.maggotcheesemod.config.Config;
 import landospuk.maggotcheesemod.world.OreGeneration;
 import net.minecraftforge.common.MinecraftForge;
@@ -47,6 +48,7 @@ public maggotcheesemod()
 	}
 	private void clientRegistries(final FMLClientSetupEvent event)
 	{
+		MaggotRenderRegistry.registryEntityRenders();
 		Logger.info("clientRegistries method registered");
 	}
 }

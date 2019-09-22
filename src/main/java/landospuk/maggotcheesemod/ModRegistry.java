@@ -1,5 +1,7 @@
 package landospuk.maggotcheesemod;
 
+import javax.swing.text.html.parser.Entity;
+
 import org.apache.logging.log4j.Logger;
 
 import landospuk.maggotcheesemod.blocks.CustomCropBlock;
@@ -7,9 +9,11 @@ import landospuk.maggotcheesemod.init.BlockList;
 import landospuk.maggotcheesemod.init.FoodList;
 import landospuk.maggotcheesemod.init.ItemList;
 import landospuk.maggotcheesemod.init.ItemSeedsMCM;
+import landospuk.maggotcheesemod.init.MaggotEntities;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.entity.EntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -37,6 +41,9 @@ public class ModRegistry
 			ItemList.maggot_cheese_ore = new BlockItem(BlockList.maggot_cheese_ore, new Item.Properties().group(MaggotCheeseItemGroup)).setRegistryName(BlockList.maggot_cheese_ore.getRegistryName()),
 			ItemList.maggot_seeds =  new ItemSeedsMCM("maggot_seeds",  BlockList.maggot_cheese_plant)
 		);
+		
+		MaggotEntities.registerEntitySpawnEggs(event);
+		
 	}
 	
 	@SubscribeEvent
@@ -47,7 +54,18 @@ public class ModRegistry
 			BlockList.maggot_cheese_ore = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).lightValue(5).sound(SoundType.STONE)).setRegistryName(location("maggot_cheese_ore")),
 			BlockList.maggot_cheese_plant = new CustomCropBlock("maggot_cheese_plant")
 		);
-}
+	}
+	
+	@SubscribeEvent
+	public static void registerEntities(final RegistryEvent.Register<EntityType<?>> event)
+	{
+		event.getRegistry().registerAll
+		(
+			MaggotEntities.MAGGOT_ENTITY
+		);
+		
+		MaggotEntities.registerEntityWorldSpawns();
+	}
 	
 	public static ResourceLocation location(String name)
 	{

@@ -13,4 +13,6 @@ public class ItemList
 	public static Item ashes;
 	
 	public static Item maggot_seeds = new ItemSeedsMCM("maggot_seeds", BlockList.maggot_cheese_plant);
+	
+	public static Item maggot_entity_egg;
 }

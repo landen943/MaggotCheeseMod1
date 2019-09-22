@@ -3,10 +3,13 @@
 	"item.maggotcheesemod.crispy_maggot_cheese": "Crispy Maggot Cheese",
 	"item.maggotcheesemod.burnt_maggot_cheese": "Burnt Maggot Cheese",
 	"item.maggotcheesemod.ashes": "Ashes",
+	"item.maggotcheesemod.maggot_seeds": "Maggot Seeds",
+	
+	"item.maggotcheesemod.maggot_entity_egg": "Maggot Spawn Egg",
 
 	"itemGroup.maggotcheesemod": "Maggot Cheese Mod",
 
 	"block.maggotcheesemod.maggot_cheese_ore": "Maggot Cheese Ore",
 
-	"item.maggotcheesemod.maggot_seeds": "Maggot Seeds"
+	"entity.maggotcheesemod.maggot_entity": "Maggot Entity"
 }
